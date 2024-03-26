@@ -25,9 +25,13 @@ class Net(nn.Module):
 def main():
     my_network = Net()
 
-    for _ in range(10):
+    for step in range(2):
+        print(f"Step {step}")
         x = torch.rand((4, 3, 32, 32))
-        y = my_network(x)            
+        y = my_network(x)
+        print(f"input {x[0,0,0,0]}, output {y[0,0]}\n")
+
+    print("Done!")
 
 if __name__ == "__main__":
     main()
