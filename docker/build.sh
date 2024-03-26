@@ -1,0 +1,1 @@
+docker build -t local/example-repo:pytorch2.2.0-cuda12.1 -f ./docker/Dockerfile --progress=plain .
